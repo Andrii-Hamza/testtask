@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: auth-api
+  datasource:
+    url: ${POSTGRES_URL:jdbc:postgresql://localhost:5432/auth_db}
+    username: ${POSTGRES_USER:root}
+    password: ${POSTGRES_PASSWORD:root}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+app:
+  jwt:
+    secret: ${JWT_SECRET:default-secret-key-for-dev-only-change-in-prod-min-32-chars!!}
+    expiration-ms: 86400000
+  internal-token: ${INTERNAL_TOKEN:dev-internal-token}
+  data-api-url: ${DATA_API_URL:http://data-api:8081}
