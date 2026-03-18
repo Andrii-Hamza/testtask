@@ -14,7 +14,7 @@ spring:
     open-in-view: false
 app:
   jwt:
-    secret: ${JWT_SECRET:default-secret-key-for-dev-only-change-in-prod-min-32-chars!!}
-    expiration-ms: 86400000
+    secret: ${JWT_SECRET:4fdH334jj8kjf40n3hd3jdkejd322kdnj32n2dnjsd2f4b}
+    expiration-ms: 76000
   internal-token: ${INTERNAL_TOKEN:dev-internal-token}
   data-api-url: ${DATA_API_URL:http://data-api:8081}

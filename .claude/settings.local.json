@@ -55,7 +55,11 @@
       "Bash(gh run:*)",
       "WebSearch",
       "Bash(mvn package:*)",
-      "Bash(which java:*)"
+      "Bash(which java:*)",
+      "WebFetch(domain:api.github.com)",
+      "Bash(git:*)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)"
     ],
     "deny": []
   }
