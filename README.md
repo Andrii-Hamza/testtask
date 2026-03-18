@@ -19,10 +19,12 @@
 ```
 
 **auth-api** — register, login, get a JWT, send text for processing
+
 **data-api** — reverses & uppercases your text (that's the "transform")
+
 **Postgres 16** — stores users + processing logs
 
-## 🚀 Run
+## Run
 
 ```bash
 mvn -f auth-api/pom.xml clean package -DskipTests
@@ -30,7 +32,7 @@ mvn -f data-api/pom.xml clean package -DskipTests
 docker compose up -d --build
 ```
 
-## 🧪 Try It
+## Try It
 
 ```bash
 # 1. Register
@@ -53,7 +55,7 @@ curl -s -X POST http://localhost:8080/api/process \
 # → {"result":"DLROW OLLEH"}
 ```
 
-## 📦 Tech Stack
+## Tech Stack
 
 | | |
 |---|---|
@@ -62,7 +64,7 @@ curl -s -X POST http://localhost:8080/api/process \
 | PostgreSQL 16 | JPA (Hibernate) |
 | Docker + Compose | Multi-stage builds |
 
-## 🔑 Environment
+## Environment
 
 | Variable | Default |
 |---|---|
@@ -71,11 +73,4 @@ curl -s -X POST http://localhost:8080/api/process \
 | `JWT_SECRET` | dev key (change in prod!) |
 | `INTERNAL_TOKEN` | `dev-internal-token` |
 
-## 📂 Structure
-
-```
-auth-api/       ← brains (auth + orchestration)
-data-api/       ← muscle (text transformation)
-docker-compose.yml
-```
 

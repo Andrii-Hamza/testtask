@@ -1,8 +1,7 @@
 HELP.md
 .gradle
 build/
-.claude
-*claude/**
+.claude/
 INIT.md
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
