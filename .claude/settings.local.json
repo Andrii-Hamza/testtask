@@ -59,7 +59,8 @@
       "WebFetch(domain:api.github.com)",
       "Bash(git:*)",
       "WebFetch(domain:github.com)",
-      "WebFetch(domain:raw.githubusercontent.com)"
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(find /mnt/c/JavaProjects/testtask -type f -not -path */target/* -not -path */.idea/* -not -path */.mvn/*)"
     ],
     "deny": []
   }

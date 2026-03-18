@@ -15,6 +15,6 @@ spring:
 app:
   jwt:
     secret: ${JWT_SECRET:4fdH334jj8kjf40n3hd3jdkejd322kdnj32n2dnjsd2f4b}
-    expiration-ms: 76000
+    expiration-ms: 760000
   internal-token: ${INTERNAL_TOKEN:dev-internal-token}
   data-api-url: ${DATA_API_URL:http://data-api:8081}
